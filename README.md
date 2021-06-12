@@ -2,6 +2,10 @@
 
 Creating RabbitMQ Send / Receive Hello World code using Python
 
+This piece of code is in Python, so you need python and pika library.
+
+$> python -m pip install pika --upgrade
+
 
 RabbitMQ: Downloading & Installing.
 
