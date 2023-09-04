@@ -4,21 +4,32 @@ Creating RabbitMQ Send / Receive Hello World code using Python
 
 This piece of code is in Python, so you need python and pika library.
 
-$> python -m pip install pika --upgrade
+* Create and activate virutual environment
+
+```
+$ python3 -m venv env
+$ source env/bin/activate
+```
+
+* Install pika with pip
+
+```$ python3 -m pip install pika```
 
 
-RabbitMQ: Downloading & Installing.
+* RabbitMQ: Downloading & Installing.
 
-https://www.rabbitmq.com/download.html
+[website](https://www.rabbitmq.com/download.html)
 
-If you're on Linux or Ubuntu, simplest way is to use RabbiMQ docker image.
+Run with docker 
 
-$> docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```$ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management```
 
-Open new terminal window, Then start consumer (receiver) receive.py first
-$> python receive.py
+* First Open new terminal window, Then start consumer (receiver) receive.py 
 
-Open another new terminal window, start producer (sender) send.py ,
-$> python send.py
+```$ python3 receive.py```
 
-Thats it! Enjoy.
+* Open another new terminal window, start producer (sender) send.py
+
+```$ python3 send.py```
+
+
